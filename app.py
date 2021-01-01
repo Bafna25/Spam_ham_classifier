@@ -44,9 +44,9 @@ def home():
     model_svm = pickle.load(open('mode.pkl','rb'))
     result_svm = model_svm.predict(tf_df_x)
     if result_svm == 1:
-        return render_template('home.html',prediction_text = ['Spam'])
+        return render_template('home.html',prediction_text = ['Mail is Spam'])
     else:
-        return render_template('home.html',prediction_text = ['Ham'])
+        return render_template('home.html',prediction_text = ['Mail is Ham'])
 
 
 
