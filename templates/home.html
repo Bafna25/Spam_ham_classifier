@@ -1,14 +1,14 @@
 <html>
 
 
-<body text="#000000	" background="static\mail.jpg" marginwidth="100">
+<body text="#000000	" bgcolor=#00ffbf>
 <center>
     <h1> MACHINE LEARNING MODEL : SPAM HAM DETECTION </h1><br>
         <img src='static\mail.jpg' alt="mail" width="50" height="50">
     <br><br>
 
     <form action="{{ url_for('home') }}" method="post">
-        <textarea autofocus ROWS="18" COLS="50" placeholder = "Enter MAIL to be Tested here !!!"  name = "mail"></textarea><br><br>
+        <textarea autofocus ROWS="18" COLS="100" placeholder = "Enter MAIL to be Tested here !!!"  name = "mail"></textarea><br><br>
         <input type="submit" value="Prediction">
 
     </form>
